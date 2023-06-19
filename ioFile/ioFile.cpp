@@ -1,5 +1,6 @@
 #include <fstream>
 #include <iostream>
+#include <string>
 using namespace std;
 
 int main() {
@@ -32,5 +33,16 @@ int main() {
 	infile.open("contohIofile.txt");
 
 	cout << ">= Membuka dan Membaca file " << endl;
-
+	// jika file ada maka
+	if (infile.is_open())
+	{
+		// melakukan perulangan setiap baris
+		while (getline(infile, baris)) 
+		{
+			//dan tampilkan disini
+			cout << baris << '\n';
+		}
+		//tutup file tersebut setelah selesai
+		infile.close();
+	}
 }
