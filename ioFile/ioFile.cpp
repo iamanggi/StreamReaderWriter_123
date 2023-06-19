@@ -29,5 +29,8 @@ int main() {
 	//membuka file dalam mode membaca
 	ifstream infile;
 	//menunjukan ke sebuah file
-	infile.open("contohIofile.txt")
+	infile.open("contohIofile.txt");
+
+	cout << ">= Membuka dan Membaca file " << endl;
+
 }
